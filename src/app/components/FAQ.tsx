@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "What ongoing costs should I expect?",
-    answer: "Every call has underlying usage fees (for telephony and AI voice) through providers like Twilio, ElevenLabs, and Cal.com. These are billed as pass-through voice/usage costs. If you choose the managed plan, there&apos;s also a flat monthly fee starting at $250/month for ongoing support and optimization."
+    answer: "Every call has underlying usage fees (for telephony and AI voice). These are billed as pass-through voice/usage costs. If you choose the managed plan, there&apos;s also a flat monthly fee starting at $250/month for ongoing support and optimization, which includes multilingual support (AI receptionist can speak in many languages)."
   },
   {
     question: "Do I have to pay the monthly managed fee?",

@@ -26,7 +26,7 @@ const ongoingPlans = [
     price: '$0/month + usage',
     features: [
       'No monthly management fee',
-      'You pay call and voice usage (Twilio, ElevenLabs, Cal.com) at pass-through cost',
+      'You pay call and voice usage at pass-through cost',
       'Request changes and updates on an as-needed basis'
     ]
   },
@@ -39,7 +39,8 @@ const ongoingPlans = [
       'Monitoring and light optimization of call flows',
       'Priority support',
       'Monthly summary of call performance and insights',
-      'Vendor management for telephony and AI usage (Twilio, ElevenLabs, Cal.com)'
+      'Vendor management for telephony and AI usage',
+      'Multilingual support - AI receptionist can speak in many languages (additional cost included)'
     ]
   }
 ];
@@ -159,7 +160,7 @@ export default function Pricing() {
             ))}
           </div>
           <p className="text-center text-blue-200/60 text-sm mt-8 max-w-3xl mx-auto">
-            All plans include pass-through billing for voice and telephony usage (Twilio, ElevenLabs, Cal.com) at cost.
+            All plans include pass-through billing for voice and telephony usage at cost.
           </p>
         </div>
       </div>

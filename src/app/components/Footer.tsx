@@ -127,13 +127,13 @@ export default function Footer() {
             </h4>
             <div className="space-y-4">
               <a 
-                href="mailto:support@alpha-it.com" 
+                href="mailto:support@alphait.io" 
                 className="flex items-center gap-3 text-blue-200/80 hover:text-white group transition-colors duration-300"
               >
                 <div className="p-2 rounded-md bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors duration-300">
                   <Mail className="w-4 h-4" />
                 </div>
-                support@alpha-it.com
+                support@alphait.io
               </a>
               <a 
                 href="tel:+15551234567" 
