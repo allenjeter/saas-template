@@ -6,7 +6,7 @@ import { CardSpotlight } from './ui/card-spotlight';
 const packageItems = [
   {
     title: "Requirements & Workflow Session",
-    description: "We'll understand your business workflows, tone, and specific rules to create the perfect AI receptionist."
+    description: "We&apos;ll understand your business workflows, tone, and specific rules to create the perfect AI receptionist."
   },
   {
     title: "Custom FAQ & Knowledge Base",
@@ -14,7 +14,7 @@ const packageItems = [
   },
   {
     title: "Dedicated Phone Number or Call Routing",
-    description: "We'll set up a dedicated phone number or configure call forwarding from your existing number."
+    description: "We&apos;ll set up a dedicated phone number or configure call forwarding from your existing number."
   },
   {
     title: "Scheduling Integration",
@@ -26,7 +26,7 @@ const packageItems = [
   },
   {
     title: "Testing & Launch",
-    description: "We'll test with your real call flows, iterate until it's perfect, and then go live."
+    description: "We&apos;ll test with your real call flows, iterate until it&apos;s perfect, and then go live."
   }
 ];
 

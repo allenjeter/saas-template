@@ -53,10 +53,10 @@ export default function GetStartedPage() {
                 Thank You!
               </h1>
               <p className="text-lg text-blue-200/80 mb-8">
-                We've received your information and will contact you soon to schedule your requirements session.
+                We&apos;ve received your information and will contact you soon to schedule your requirements session.
               </p>
               <p className="text-base text-blue-200/60">
-                You'll receive a confirmation email shortly with next steps.
+                You&apos;ll receive a confirmation email shortly with next steps.
               </p>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function GetStartedPage() {
                 Get Started with Your AI Receptionist
               </h1>
               <p className="text-lg md:text-xl text-blue-200/80 max-w-2xl mx-auto">
-                Fill out the form below and we'll use your answers to prepare for your requirements call. We'll schedule a time that works for you to discuss your needs and get started.
+                Fill out the form below and we&apos;ll use your answers to prepare for your requirements call. We&apos;ll schedule a time that works for you to discuss your needs and get started.
               </p>
             </div>
 
@@ -190,7 +190,7 @@ export default function GetStartedPage() {
 
                 <div>
                   <label htmlFor="biggestProblem" className="block text-sm font-medium text-blue-200 mb-2">
-                    What's your biggest problem with call handling right now? *
+                    What&apos;s your biggest problem with call handling right now? *
                   </label>
                   <textarea
                     id="biggestProblem"
@@ -200,7 +200,7 @@ export default function GetStartedPage() {
                     value={formData.biggestProblem}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg bg-blue-950/30 border border-blue-500/20 text-white placeholder:text-blue-200/50 focus:outline-none focus:border-blue-500/50 focus:ring-2 focus:ring-blue-500/20 resize-none"
-                    placeholder="Tell us about missed calls, after-hours inquiries, scheduling challenges, or any other issues you're facing..."
+                    placeholder="Tell us about missed calls, after-hours inquiries, scheduling challenges, or any other issues you&apos;re facing..."
                   />
                 </div>
 

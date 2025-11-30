@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "How do you work with my existing phone number?",
-    answer: "We can either set up a dedicated phone number for your AI Receptionist, or configure call forwarding from your existing number. During the requirements session, we'll discuss which option works best for your business."
+    answer: "We can either set up a dedicated phone number for your AI Receptionist, or configure call forwarding from your existing number. During the requirements session, we&apos;ll discuss which option works best for your business."
   },
   {
     question: "Will callers know they're speaking with AI?",
@@ -17,19 +17,19 @@ const faqs = [
   },
   {
     question: "How do you handle urgent or emergency calls?",
-    answer: "During setup, we'll configure your AI Receptionist with specific protocols for urgent situations. It can immediately transfer emergency calls, route urgent medical calls to on-call staff, or escalate based on your business rules."
+    answer: "During setup, we&apos;ll configure your AI Receptionist with specific protocols for urgent situations. It can immediately transfer emergency calls, route urgent medical calls to on-call staff, or escalate based on your business rules."
   },
   {
     question: "What schedules/calendars do you integrate with?",
-    answer: "We integrate with popular scheduling systems including Calendly, Google Calendar, and many practice management systems. During the requirements session, we'll confirm which system you use and ensure seamless integration."
+    answer: "We integrate with popular scheduling systems including Calendly, Google Calendar, and many practice management systems. During the requirements session, we&apos;ll confirm which system you use and ensure seamless integration."
   },
   {
     question: "How long does setup take?",
-    answer: "Typically, setup takes 2-4 weeks from the initial requirements session to going live. This includes gathering requirements, building and training the AI, testing, and final deployment. We'll work at your pace to ensure everything is perfect."
+    answer: "Typically, setup takes 2-4 weeks from the initial requirements session to going live. This includes gathering requirements, building and training the AI, testing, and final deployment. We&apos;ll work at your pace to ensure everything is perfect."
   },
   {
     question: "Can I update the FAQs or script later?",
-    answer: "Yes! While major updates may require additional work, we can help you update FAQs, modify call flows, and adjust the AI's responses. We'll discuss ongoing support options during setup."
+    answer: "Yes! While major updates may require additional work, we can help you update FAQs, modify call flows, and adjust the AI&apos;s responses. We&apos;ll discuss ongoing support options during setup."
   }
 ];
 
