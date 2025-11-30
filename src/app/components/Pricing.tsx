@@ -20,26 +20,27 @@ const plans = [
   }
 ];
 
-const addons = [
+const ongoingPlans = [
   {
-    name: 'Multi-location Routing',
-    description: 'Route calls to multiple locations or departments'
+    name: 'Pay-as-you-go',
+    price: '$0/month + usage',
+    features: [
+      'No monthly management fee',
+      'You pay call and voice usage (Twilio, ElevenLabs, Cal.com) at pass-through cost',
+      'Request changes and updates on an as-needed basis'
+    ]
   },
   {
-    name: 'Bilingual Voice',
-    description: 'AI Receptionist speaks multiple languages'
-  },
-  {
-    name: 'CRM Integrations',
-    description: 'Connect with your CRM system for lead management'
-  },
-  {
-    name: 'SMS Follow-ups',
-    description: 'Automated SMS follow-ups after calls'
-  },
-  {
-    name: 'Ongoing Optimization',
-    description: 'Regular updates and improvements to your AI Receptionist'
+    name: 'Managed AI Receptionist',
+    price: 'From $250/month + usage',
+    popular: false,
+    features: [
+      'Ongoing script and FAQ updates',
+      'Monitoring and light optimization of call flows',
+      'Priority support',
+      'Monthly summary of call performance and insights',
+      'Vendor management for telephony and AI usage (Twilio, ElevenLabs, Cal.com)'
+    ]
   }
 ];
 
@@ -71,7 +72,7 @@ export default function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-lg md:text-xl text-blue-200/80 max-w-2xl mx-auto">
-            One-time setup fee. No surprise monthly contracts.
+            One-time $1,000 setup. Optional managed service from $250/month. Call and voice usage billed separately.
           </p>
         </div>
 
@@ -127,25 +128,39 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto mt-16">
           <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 text-center mb-8">
-            Add-ons (Available Upon Request)
+            Ongoing Options After Launch
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {addons.map((addon, index) => (
-              <div
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            {ongoingPlans.map((plan, index) => (
+              <CardSpotlight 
                 key={index}
-                className="p-4 rounded-lg border border-blue-500/20 bg-blue-950/20 backdrop-blur-sm"
+                className="group flex flex-col p-6 md:p-8 backdrop-blur-sm backdrop-saturate-150 hover:scale-[1.02] transition-transform duration-300"
+                color="rgba(59, 130, 246, 0.45)"
               >
-                <h4 className="text-lg font-semibold text-white mb-2">
-                  {addon.name}
-                </h4>
-                <p className="text-sm text-blue-200/70">
-                  {addon.description}
-                </p>
-              </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {plan.name}
+                  </h3>
+                  <div className="mb-6 flex items-baseline">
+                    <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">{plan.price}</span>
+                  </div>
+                  <ul className="space-y-3">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                        <span className="text-blue-100/80 text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardSpotlight>
             ))}
           </div>
+          <p className="text-center text-blue-200/60 text-sm mt-8 max-w-3xl mx-auto">
+            All plans include pass-through billing for voice and telephony usage (Twilio, ElevenLabs, Cal.com) at cost.
+          </p>
         </div>
       </div>
     </section>

@@ -47,7 +47,7 @@ export default function WhatYouGet() {
             <p className="text-2xl font-bold text-blue-300">
               One-time setup fee: <span className="text-white">$1,000</span>
             </p>
-            <p className="text-sm text-blue-200/70 mt-1">No surprise monthly contracts</p>
+            <p className="text-sm text-blue-200/70 mt-1">Optional managed service from $250/month</p>
           </div>
         </div>
 

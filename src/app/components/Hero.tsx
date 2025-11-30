@@ -27,6 +27,9 @@ export default function Hero() {
               <p className="text-base sm:text-lg max-w-3xl mx-auto font-light text-blue-300/70">
                 Perfect for dental offices, chiropractic clinics, medical practices, realtors, and other small service businesses.
               </p>
+              <p className="text-sm sm:text-base max-w-3xl mx-auto font-light text-blue-400/60 pt-2">
+                One-time $1,000 setup, plus optional managed service from $250/month. Pay a one-time setup fee to build your AI receptionist. Keep things lean with usage-based billing, or add a managed service plan from $250/month if you&apos;d like us to handle updates, tuning, and support.
+              </p>
             </div>
             
             <div className="flex justify-center gap-4 flex-wrap">

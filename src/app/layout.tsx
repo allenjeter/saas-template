@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Alpha IT - AI Receptionist for Small Businesses",
-  description: "Finally, a 24/7 AI Receptionist for small service businesses. Stop missing calls, leads, and appointments. Alpha IT builds custom AI Receptionists that answer questions, schedule appointments, and qualify leads for dental offices, chiropractic clinics, medical practices, and realtors.",
+  description: "Finally, a 24/7 AI Receptionist for small service businesses. Stop missing calls, leads, and appointments. Alpha IT builds custom AI Receptionists that answer questions, schedule appointments, and qualify leads for dental offices, chiropractic clinics, medical practices, and realtors. One-time $1,000 setup with optional managed AI receptionist service from $250/month.",
 };
 
 export default function RootLayout({

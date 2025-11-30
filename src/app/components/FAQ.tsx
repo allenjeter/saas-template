@@ -5,7 +5,19 @@ import { motion } from 'framer-motion';
 const faqs = [
   {
     question: "Is this a one-time fee or a subscription?",
-    answer: "The $1,000 setup fee is a one-time payment. There are no surprise monthly contracts or recurring fees. You pay once, and your AI Receptionist is yours."
+    answer: "There is a one-time $1,000 setup fee to design, train, and launch your AI receptionist. After that, you can either stay on a simple pay-as-you-go model (no monthly management fee, just usage costs) or choose an optional managed plan starting at $250/month if you&apos;d like us to handle updates, tuning, and support."
+  },
+  {
+    question: "What ongoing costs should I expect?",
+    answer: "Every call has underlying usage fees (for telephony and AI voice) through providers like Twilio, ElevenLabs, and Cal.com. These are billed as pass-through voice/usage costs. If you choose the managed plan, there&apos;s also a flat monthly fee starting at $250/month for ongoing support and optimization."
+  },
+  {
+    question: "Do I have to pay the monthly managed fee?",
+    answer: "No. The managed plan is optional. Many clients start with the one-time setup and pay only the underlying usage fees. The managed plan is for teams who want us to continuously update scripts, monitor performance, and handle changes for them."
+  },
+  {
+    question: "Can I switch into or out of the managed plan later?",
+    answer: "Yes. You can start on pay-as-you-go and upgrade to a managed plan later, or downgrade out of the managed plan if you prefer to handle updates yourself."
   },
   {
     question: "How do you work with my existing phone number?",
@@ -26,10 +38,6 @@ const faqs = [
   {
     question: "How long does setup take?",
     answer: "Typically, setup takes 2-4 weeks from the initial requirements session to going live. This includes gathering requirements, building and training the AI, testing, and final deployment. We&apos;ll work at your pace to ensure everything is perfect."
-  },
-  {
-    question: "Can I update the FAQs or script later?",
-    answer: "Yes! While major updates may require additional work, we can help you update FAQs, modify call flows, and adjust the AI&apos;s responses. We&apos;ll discuss ongoing support options during setup."
   }
 ];
 
