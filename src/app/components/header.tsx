@@ -51,22 +51,28 @@ const Header = () => {
 
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            href="/features"
+            href="/industries"
             className="text-base text-gray-300 hover:text-white transition-colors"
           >
-            Features
+            Who We Serve
           </Link>
           <Link
-            href="/about"
+            href="/how-it-works"
             className="text-base text-gray-300 hover:text-white transition-colors"
           >
-            About
+            How It Works
           </Link>
           <Link
-            href="/contact"
+            href="/pricing"
             className="text-base text-gray-300 hover:text-white transition-colors"
           >
-            Contact
+            Pricing
+          </Link>
+          <Link
+            href="/faq"
+            className="text-base text-gray-300 hover:text-white transition-colors"
+          >
+            FAQ
           </Link>
           <Link
             href="/get-started"

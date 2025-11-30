@@ -1,17 +1,14 @@
 "use client";
 import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-import TrustedBy from "./components/TrustedBy";
-import { BentoGridThirdDemo } from "./components/Features-Bento";
 import FAQ from "./components/FAQ";
 import { RevealOnScroll } from "./components/ui/reveal-on-scroll";
 import Header from "./components/header";
 import React from "react";
-import { BentoDemo } from "./components/Features-Bento2";
-import { catchyLine as CatchyLine } from "./components/catchyline";
+import WhoWeServe from "./components/WhoWeServe";
+import WhatYouGet from "./components/WhatYouGet";
+import HowItWorksHome from "./components/HowItWorksHome";
+import FinalCTA from "./components/FinalCTA";
 
 function RevealLayout({ children }: { children: React.ReactNode }) {
   return React.Children.map(children, (child) => (
@@ -27,16 +24,11 @@ export default function Home() {
       <Header />
       <RevealLayout>
         <Hero />
-        <TrustedBy />
-        <CatchyLine />
-        <div className="w-1/2 mx-auto">
-          <BentoDemo/>
-        </div>
-        <Features />
-        <Testimonials />
-        <BentoGridThirdDemo/>
-        <Pricing />
+        <WhoWeServe />
+        <WhatYouGet />
+        <HowItWorksHome />
         <FAQ />
+        <FinalCTA />
         <Footer />
       </RevealLayout>
     </div>

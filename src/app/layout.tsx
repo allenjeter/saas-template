@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "BOT-Sensei",
-  description: "BOT-Sensei is a powerful AI-powered Telegram bot platform that helps you create and monetize custom chatbots. Build intelligent Telegram bots that can engage users with natural conversations, automate tasks, and scale your SaaS business effortlessly.",
+  title: "Alpha IT - AI Receptionist for Small Businesses",
+  description: "Finally, a 24/7 AI Receptionist for small service businesses. Stop missing calls, leads, and appointments. Alpha IT builds custom AI Receptionists that answer questions, schedule appointments, and qualify leads for dental offices, chiropractic clinics, medical practices, and realtors.",
 };
 
 export default function RootLayout({

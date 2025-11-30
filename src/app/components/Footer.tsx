@@ -27,7 +27,7 @@ export default function Footer() {
             Stay Updated
           </h3>
           <p className="text-blue-200/80 mb-6 max-w-md mx-auto">
-            Subscribe to our newsletter for the latest updates, features, and AI insights.
+            Subscribe to our newsletter for the latest updates on AI Receptionist features and small business insights.
           </p>
           <form onSubmit={handleSubmit} className="max-w-md mx-auto flex gap-2">
             <input
@@ -42,7 +42,7 @@ export default function Footer() {
               type="submit"
               className="flex px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-700 text-white text-base font-medium hover:opacity-90 transition-opacity shadow-[0_30px_80px_-15px_rgba(59,130,246,0.85)] hover:shadow-[0_40px_90px_-10px_rgba(59,130,246,1)]"
             >
-              <Send className="w-4 h-4 my-auto mr-2 roun" />
+              <Send className="w-4 h-4 my-auto mr-2" />
               <span>Subscribe</span>
             </button>
           </form>
@@ -52,10 +52,10 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 mb-4">
-              Bot-Sensei
+              Alpha IT
             </h3>
             <p className="text-blue-200/80 mb-6">
-              Build, deploy, and scale intelligent Telegram bots powered by cutting-edge AI technology. No coding required.
+              24/7 AI Receptionist service for small businesses. Never miss a call, lead, or appointment again.
             </p>
             <div className="flex gap-4">
               {[Facebook, Twitter, Instagram, Youtube].map((Icon, index) => (
@@ -76,13 +76,31 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              {['Features', 'Pricing', 'FAQ', 'Support', 'Contact'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-blue-200/80 hover:text-white transition-colors duration-300">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="/industries" className="text-blue-200/80 hover:text-white transition-colors duration-300">
+                  Who We Serve
+                </a>
+              </li>
+              <li>
+                <a href="/how-it-works" className="text-blue-200/80 hover:text-white transition-colors duration-300">
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a href="/pricing" className="text-blue-200/80 hover:text-white transition-colors duration-300">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="/faq" className="text-blue-200/80 hover:text-white transition-colors duration-300">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="/get-started" className="text-blue-200/80 hover:text-white transition-colors duration-300">
+                  Get Started
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -92,11 +110,11 @@ export default function Footer() {
               Features
             </h4>
             <ul className="space-y-2">
-              {['Automated Responses', 'Smart Commands', 'User Analytics', 'Multi-language Support', 'Custom Integration'].map((item) => (
+              {['24/7 Availability', 'Appointment Scheduling', 'Lead Qualification', 'FAQ Handling', 'Call Routing'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-blue-200/80 hover:text-white transition-colors duration-300">
+                  <span className="text-blue-200/80">
                     {item}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -109,22 +127,22 @@ export default function Footer() {
             </h4>
             <div className="space-y-4">
               <a 
-                href="mailto:support@bot-sensei.com" 
+                href="mailto:support@alpha-it.com" 
                 className="flex items-center gap-3 text-blue-200/80 hover:text-white group transition-colors duration-300"
               >
                 <div className="p-2 rounded-md bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors duration-300">
                   <Mail className="w-4 h-4" />
                 </div>
-                support@bot-sensei.com
+                support@alpha-it.com
               </a>
               <a 
-                href="tel:+919876543210" 
+                href="tel:+15551234567" 
                 className="flex items-center gap-3 text-blue-200/80 hover:text-white group transition-colors duration-300"
               >
                 <div className="p-2 rounded-md bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors duration-300">
                   <Phone className="w-4 h-4" />
                 </div>
-                +91 98765 43210
+                (555) 123-4567
               </a>
             </div>
           </div>
@@ -134,7 +152,7 @@ export default function Footer() {
         <div className="relative mt-16 pt-8">
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
           <p className="text-center text-blue-200/60">
-            &copy; {new Date().getFullYear()} Bot-Sensei. All rights reserved.
+            &copy; {new Date().getFullYear()} Alpha IT. All rights reserved.
           </p>
         </div>
       </div>

@@ -4,24 +4,32 @@ import { motion } from 'framer-motion';
 
 const faqs = [
   {
-    question: "What is Bot-Sensei?",
-    answer: "Bot-Sensei is a no-code platform that enables you to build, deploy, and scale intelligent Telegram bots powered by cutting-edge AI technology."
+    question: "Is this a one-time fee or a subscription?",
+    answer: "The $1,000 setup fee is a one-time payment. There are no surprise monthly contracts or recurring fees. You pay once, and your AI Receptionist is yours."
   },
   {
-    question: "How do I get started?",
-    answer: "Simply sign up for an account, choose a plan that suits your needs, and use our intuitive interface to start building your bot. No coding experience required!"
+    question: "How do you work with my existing phone number?",
+    answer: "We can either set up a dedicated phone number for your AI Receptionist, or configure call forwarding from your existing number. During the requirements session, we'll discuss which option works best for your business."
   },
   {
-    question: "What features are included?",
-    answer: "Our platform includes AI-powered responses, custom commands, media handling, analytics, and seamless Telegram integration. Features vary by plan."
+    question: "Will callers know they're speaking with AI?",
+    answer: "The AI Receptionist is designed to sound natural and professional. While we recommend transparency, the AI can be configured to introduce itself however you prefer. Many businesses find that callers appreciate the 24/7 availability and consistent service."
   },
   {
-    question: "Do you offer customer support?",
-    answer: "Yes! We provide comprehensive customer support through email, chat, and documentation. Premium plans include priority support."
+    question: "How do you handle urgent or emergency calls?",
+    answer: "During setup, we'll configure your AI Receptionist with specific protocols for urgent situations. It can immediately transfer emergency calls, route urgent medical calls to on-call staff, or escalate based on your business rules."
   },
   {
-    question: "Can I upgrade or downgrade my plan?",
-    answer: "Yes, you can change your plan at any time. Changes will be reflected in your next billing cycle."
+    question: "What schedules/calendars do you integrate with?",
+    answer: "We integrate with popular scheduling systems including Calendly, Google Calendar, and many practice management systems. During the requirements session, we'll confirm which system you use and ensure seamless integration."
+  },
+  {
+    question: "How long does setup take?",
+    answer: "Typically, setup takes 2-4 weeks from the initial requirements session to going live. This includes gathering requirements, building and training the AI, testing, and final deployment. We'll work at your pace to ensure everything is perfect."
+  },
+  {
+    question: "Can I update the FAQs or script later?",
+    answer: "Yes! While major updates may require additional work, we can help you update FAQs, modify call flows, and adjust the AI's responses. We'll discuss ongoing support options during setup."
   }
 ];
 
@@ -57,7 +65,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg text-blue-200/80">
-            Everything you need to know about Bot-Sensei
+            Everything you need to know about AI Receptionist
           </p>
         </div>
 

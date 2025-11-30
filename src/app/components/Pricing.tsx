@@ -1,43 +1,45 @@
 import { Check } from 'lucide-react';
 import React, { useMemo } from 'react';
+import Link from 'next/link';
 import { CardSpotlight } from './ui/card-spotlight';
 
 const plans = [
   {
-    name: 'Basic',
-    price: '$19',
-    features: [
-      '3 Active Bots',
-      '5,000 Monthly Messages', 
-      'Basic Bot Templates',
-      'Standard Support',
-      'Basic Analytics'
-    ]
-  },
-  {
-    name: 'Professional',
-    price: '$49',
+    name: 'AI Receptionist Setup',
+    price: '$1,000',
     popular: true,
+    oneTime: true,
     features: [
-      'Unlimited Active Bots',
-      '50,000 Monthly Messages',
-      'Advanced Templates', 
-      'Priority Support',
-      'Advanced Analytics',
-      'AI-Powered Features'
+      'Requirements & workflow session',
+      'Custom FAQ and knowledge base',
+      'Dedicated number or call routing setup',
+      'Scheduling integration',
+      'Lead qualification logic',
+      'Testing and launch'
     ]
+  }
+];
+
+const addons = [
+  {
+    name: 'Multi-location Routing',
+    description: 'Route calls to multiple locations or departments'
   },
   {
-    name: 'Enterprise',
-    price: 'Custom',
-    features: [
-      'Custom Bot Solutions',
-      'Unlimited Messages',
-      'Dedicated Account Manager',
-      'SLA Guarantee',
-      'Custom Integrations',
-      'Custom AI Training'
-    ]
+    name: 'Bilingual Voice',
+    description: 'AI Receptionist speaks multiple languages'
+  },
+  {
+    name: 'CRM Integrations',
+    description: 'Connect with your CRM system for lead management'
+  },
+  {
+    name: 'SMS Follow-ups',
+    description: 'Automated SMS follow-ups after calls'
+  },
+  {
+    name: 'Ongoing Optimization',
+    description: 'Regular updates and improvements to your AI Receptionist'
   }
 ];
 
@@ -69,11 +71,11 @@ export default function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-lg md:text-xl text-blue-200/80 max-w-2xl mx-auto">
-            Choose the perfect plan for your bot-building needs
+            One-time setup fee. No surprise monthly contracts.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-1 gap-6 lg:gap-8 items-stretch max-w-2xl mx-auto mb-16">
           {plans.map((plan, index) => (
             <CardSpotlight 
               key={index}
@@ -93,12 +95,12 @@ export default function Pricing() {
                     Most Popular
                   </span>
                 )}
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-2xl font-semibold text-white mb-2">
                   {plan.name}
                 </h3>
                 <div className="mb-8 flex items-baseline">
-                  <span className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">{plan.price}</span>
-                  {plan.price !== 'Custom' && <span className="text-blue-200/60 ml-2">/month</span>}
+                  <span className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">{plan.price}</span>
+                  {plan.oneTime && <span className="text-blue-200/60 ml-2 text-lg">(one-time)</span>}
                 </div>
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, i) => (
@@ -110,18 +112,40 @@ export default function Pricing() {
                 </ul>
               </div>
               <div>
-                <button 
-                  className={`w-full py-4 px-6 rounded-lg font-semibold transition-all duration-300 ${
+                <Link 
+                  href="/get-started"
+                  className={`w-full block text-center py-4 px-6 rounded-lg font-semibold transition-all duration-300 ${
                     plan.popular
                       ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40'
                       : 'bg-gray-800 text-white hover:bg-gray-700 hover:shadow-lg'
                   }`}
                 >
-                  {plan.price === 'Custom' ? 'Contact Sales' : 'Get Started'}
-                </button>
+                  Get Started
+                </Link>
               </div>
             </CardSpotlight>
           ))}
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 text-center mb-8">
+            Add-ons (Available Upon Request)
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {addons.map((addon, index) => (
+              <div
+                key={index}
+                className="p-4 rounded-lg border border-blue-500/20 bg-blue-950/20 backdrop-blur-sm"
+              >
+                <h4 className="text-lg font-semibold text-white mb-2">
+                  {addon.name}
+                </h4>
+                <p className="text-sm text-blue-200/70">
+                  {addon.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
