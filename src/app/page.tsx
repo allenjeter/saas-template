@@ -9,6 +9,7 @@ import WhoWeServe from "./components/WhoWeServe";
 import WhatYouGet from "./components/WhatYouGet";
 import HowItWorksHome from "./components/HowItWorksHome";
 import FinalCTA from "./components/FinalCTA";
+import Demo from "./components/Demo";
 
 function RevealLayout({ children }: { children: React.ReactNode }) {
   return React.Children.map(children, (child) => (
@@ -24,6 +25,7 @@ export default function Home() {
       <Header />
       <RevealLayout>
         <Hero />
+        <Demo />
         <WhoWeServe />
         <WhatYouGet />
         <HowItWorksHome />
