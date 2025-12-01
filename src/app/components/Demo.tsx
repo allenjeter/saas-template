@@ -1,32 +1,24 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 
-// Declare the custom element type for TypeScript
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'elevenlabs-convai': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & { 'agent-id': string }, HTMLElement>;
-    }
-  }
-}
+const ELEVEN_LABS_SCRIPT_SRC = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
 
 export default function Demo() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Load the ElevenLabs Convai widget script
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
-    script.async = true;
-    script.type = 'text/javascript';
-    document.body.appendChild(script);
+    const existingScript = document.querySelector(`script[src="${ELEVEN_LABS_SCRIPT_SRC}"]`);
+
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.src = ELEVEN_LABS_SCRIPT_SRC;
+      script.async = true;
+      script.type = 'text/javascript';
+      document.body.appendChild(script);
+    }
 
     return () => {
-      // Cleanup: remove script on unmount
-      const existingScript = document.querySelector('script[src="https://unpkg.com/@elevenlabs/convai-widget-embed"]');
-      if (existingScript && existingScript.parentNode) {
-        existingScript.parentNode.removeChild(existingScript);
-      }
+      // Optional cleanup: leave the script in place since other components might reuse it.
     };
   }, []);
 
@@ -45,7 +37,7 @@ export default function Demo() {
         </div>
 
         <div ref={containerRef} className="flex justify-center items-center min-h-[600px]">
-          <elevenlabs-convai agent-id="agent_1501kaez75y0e0hbjdhghq5mm5nb"></elevenlabs-convai>
+          {React.createElement('elevenlabs-convai', { 'agent-id': 'agent_1501kaez75y0e0hbjdhghq5mm5nb' })}
         </div>
       </div>
     </section>
