@@ -63,6 +63,12 @@ const Header = () => {
             How It Works
           </Link>
           <Link
+            href="/demo"
+            className="text-base text-gray-300 hover:text-white transition-colors"
+          >
+            Demo
+          </Link>
+          <Link
             href="/pricing"
             className="text-base text-gray-300 hover:text-white transition-colors"
           >

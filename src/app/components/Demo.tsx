@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const ELEVEN_LABS_SCRIPT_SRC = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
 
@@ -34,10 +35,18 @@ export default function Demo() {
           <p className="text-lg md:text-xl text-blue-200/80 max-w-2xl mx-auto">
             Experience how our AI Receptionist handles calls, answers questions, and schedules appointments. Give it a try below!
           </p>
+          <Link 
+            href="/demo" 
+            className="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
+          >
+            View full demo page →
+          </Link>
         </div>
 
-        <div ref={containerRef} className="flex justify-center items-center min-h-[600px]">
-          {React.createElement('elevenlabs-convai', { 'agent-id': 'agent_1501kaez75y0e0hbjdhghq5mm5nb' })}
+        <div ref={containerRef} className="flex justify-center items-center min-h-[600px] w-full">
+          <div className="w-full max-w-4xl flex justify-center">
+            {React.createElement('elevenlabs-convai', { 'agent-id': 'agent_1501kaez75y0e0hbjdhghq5mm5nb' })}
+          </div>
         </div>
       </div>
     </section>

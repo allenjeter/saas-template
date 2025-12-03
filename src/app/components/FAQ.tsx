@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 const faqs = [
   {
     question: "Is this a one-time fee or a subscription?",
-    answer: "There is a one-time $1,000 setup fee to design, train, and launch your AI receptionist. After that, you can either stay on a simple pay-as-you-go model (no monthly management fee, just usage costs) or choose an optional managed plan starting at $250/month if you&apos;d like us to handle updates, tuning, and support."
+    answer: "There is a one-time $1,000 setup fee to design, train, and launch your AI Receptionist. After that, you can either stay on a simple pay-as-you-go model (no monthly management fee, just usage costs) or choose an optional managed plan starting at $250/month if you&apos;d like us to handle updates, tuning, and support."
   },
   {
     question: "What ongoing costs should I expect?",
-    answer: "Every call has underlying usage fees (for telephony and AI voice). These are billed as pass-through voice/usage costs. If you choose the managed plan, there&apos;s also a flat monthly fee starting at $250/month for ongoing support and optimization, which includes multilingual support (AI receptionist can speak in many languages)."
+    answer: "Every call has underlying usage fees (for telephony and AI voice). These are billed as pass-through voice/usage costs. If you choose the managed plan, there&apos;s also a flat monthly fee starting at $250/month for ongoing support and optimization, which includes multilingual support (AI Receptionist can speak in many languages)."
   },
   {
     question: "Do I have to pay the monthly managed fee?",
