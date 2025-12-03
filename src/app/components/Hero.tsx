@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { ContainerScroll } from './ui/container-scroll-animation';
 import Image from "next/image";
-import Dashboard from "../../../public/dashboard.png";
+import DashboardImage from "../../../public/alphait-image.jpg";
 
 export default function Hero() {
   return (
@@ -56,8 +56,8 @@ export default function Hero() {
               titleComponent={null}
             >
               <Image
-                src={Dashboard}
-                alt="AI Receptionist Interface"
+                src={DashboardImage}
+                alt="AI Receptionist Dashboard - Call Center Metrics and Analytics"
                 height={600}
                 width={1000}
                 className="mx-auto rounded-2xl object-cover h-full object-left-top"
