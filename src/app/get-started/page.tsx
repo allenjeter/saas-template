@@ -39,12 +39,20 @@ export default function GetStartedPage() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     
+    // Convert FormData to URLSearchParams
+    const params = new URLSearchParams();
+    formData.forEach((value, key) => {
+      if (typeof value === 'string') {
+        params.append(key, value);
+      }
+    });
+    
     try {
       // Submit to Netlify Forms
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString(),
+        body: params.toString(),
       });
 
       if (response.ok) {
