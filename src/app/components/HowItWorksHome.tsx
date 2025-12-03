@@ -7,7 +7,7 @@ const steps = [
   {
     number: "1",
     title: "Requirements Session",
-    description: "We&apos;ll schedule a call to understand your workflows, tone, rules, and specific needs for your AI receptionist."
+    description: "We will schedule a call to understand your workflows, tone, rules, and specific needs for your AI Receptionist."
   },
   {
     number: "2",
@@ -17,12 +17,12 @@ const steps = [
   {
     number: "3",
     title: "Test with Your Real Call Flows",
-    description: "We&apos;ll test the AI with your actual call scenarios and iterate until it sounds perfect and handles everything correctly."
+    description: "We will test the AI with your actual call scenarios and iterate until it sounds perfect and handles everything correctly."
   },
   {
     number: "4",
     title: "Go Live with Your Phone Number",
-    description: "We connect your dedicated phone number or route your existing number, and your AI receptionist is ready to answer calls 24/7."
+    description: "We connect your dedicated phone number or route your existing number, and your AI Receptionist is ready to answer calls 24/7."
   }
 ];
 
