@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 const faqs = [
   {
     question: "Is this a one-time fee or a subscription?",
-    answer: "There is a one-time $1,000 setup fee to design, train, and launch your AI Receptionist. After that, you can either stay on a simple pay-as-you-go model (no monthly management fee, just usage costs) or choose an optional managed plan starting at $250/month if you&apos;d like us to handle updates, tuning, and support."
+    answer: "There is a one-time $1,000 setup fee to design, train, and launch your AI Receptionist. After that, you can either stay on a simple pay-as-you-go model (no monthly management fee, just usage costs) or choose an optional managed plan starting at $250/month if you would like us to handle updates, tuning, and support."
   },
   {
     question: "What ongoing costs should I expect?",
-    answer: "Every call has underlying usage fees (for telephony and AI voice). These are billed as pass-through voice/usage costs. If you choose the managed plan, there&apos;s also a flat monthly fee starting at $250/month for ongoing support and optimization, which includes multilingual support (AI Receptionist can speak in many languages)."
+    answer: "Every call has underlying usage fees (for telephony and AI voice). These are billed as pass-through voice/usage costs. If you choose the managed plan, there is also a flat monthly fee starting at $250/month for ongoing support and optimization, which includes multilingual support (AI Receptionist can speak in many languages)."
   },
   {
     question: "Do I have to pay the monthly managed fee?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "How do you work with my existing phone number?",
-    answer: "We can either set up a dedicated phone number for your AI Receptionist, or configure call forwarding from your existing number. During the requirements session, we&apos;ll discuss which option works best for your business."
+    answer: "We can either set up a dedicated phone number for your AI Receptionist, or configure call forwarding from your existing number. During the requirements session, we will discuss which option works best for your business."
   },
   {
     question: "Will callers know they're speaking with AI?",
@@ -29,15 +29,15 @@ const faqs = [
   },
   {
     question: "How do you handle urgent or emergency calls?",
-    answer: "During setup, we&apos;ll configure your AI Receptionist with specific protocols for urgent situations. It can immediately transfer emergency calls, route urgent medical calls to on-call staff, or escalate based on your business rules."
+    answer: "During setup, we will configure your AI Receptionist with specific protocols for urgent situations. It can immediately transfer emergency calls, route urgent medical calls to on-call staff, or escalate based on your business rules."
   },
   {
     question: "What schedules/calendars do you integrate with?",
-    answer: "We integrate with popular scheduling systems including Calendly, Google Calendar, and many practice management systems. During the requirements session, we&apos;ll confirm which system you use and ensure seamless integration."
+    answer: "We integrate with popular scheduling systems including Calendly, Google Calendar, and many practice management systems. During the requirements session, we will confirm which system you use and ensure seamless integration."
   },
   {
     question: "How long does setup take?",
-    answer: "Typically, setup takes 2-4 weeks from the initial requirements session to going live. This includes gathering requirements, building and training the AI, testing, and final deployment. We&apos;ll work at your pace to ensure everything is perfect."
+    answer: "Typically, setup takes 2-4 weeks from the initial requirements session to going live. This includes gathering requirements, building and training the AI, testing, and final deployment. We will work at your pace to ensure everything is perfect."
   }
 ];
 
