@@ -48,8 +48,8 @@ export default function GetStartedPage() {
     });
     
     try {
-      // Submit to Netlify Forms
-      const response = await fetch('/', {
+      // Submit to Netlify Forms via static HTML file
+      const response = await fetch('/__forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: params.toString(),
@@ -116,9 +116,6 @@ export default function GetStartedPage() {
             >
               <form 
                 name="get-started" 
-                method="POST" 
-                data-netlify="true" 
-                netlify-honeypot="bot-field"
                 onSubmit={handleSubmit} 
                 className="space-y-6"
               >
