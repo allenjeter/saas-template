@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/alphait.png";
 
 const Header = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -37,13 +37,13 @@ const Header = () => {
       }}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link href="/" className="flex text-3xl font-bold bg-clip-text text-transparent ">
+        <Link href="/" className="flex items-center">
           <Image
             src={Logo}
-            alt="Bot Interface"
+            alt="Alpha IT Logo"
             height={50}
             width={50}
-            className="rounded-2xl object-cover"
+            className="rounded-full object-contain"
             draggable={false}
             priority
           />
@@ -80,6 +80,14 @@ const Header = () => {
           >
             FAQ
           </Link>
+          <a
+            href="https://app.alphait.io/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base text-gray-300 hover:text-white transition-colors"
+          >
+            Login
+          </a>
           <Link
             href="/get-started"
             className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white text-base font-medium hover:opacity-90 transition-opacity shadow-[0_30px_80px_-15px_rgba(59,130,246,0.85)] hover:shadow-[0_40px_90px_-10px_rgba(59,130,246,1)]"
